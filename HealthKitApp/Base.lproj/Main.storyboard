@@ -17,25 +17,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Steps Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffW-oe-vGi">
-                                <rect key="frame" x="20" y="138" width="133" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVN-EV-WL7">
+                                <rect key="frame" x="78" y="274" width="19" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVN-EV-WL7">
-                                <rect key="frame" x="20" y="188" width="133" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-gas-96" translatesAutoresizingMaskIntoConstraints="NO" id="sLC-RL-pZ6">
+                                <rect key="frame" x="142" y="114" width="32" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7CR-vk-uCk"/>
+                                    <constraint firstAttribute="width" constant="32" id="Dzw-VS-ND8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTB-4J-LXO">
+                                <rect key="frame" x="193" y="104" width="28" height="59"/>
+                                <viewLayoutGuide key="safeArea" id="zBX-OE-Ukp"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="45"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffW-oe-vGi">
+                                <rect key="frame" x="65" y="321" width="44" height="24"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ffW-oe-vGi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="0IQ-0z-fPF"/>
+                            <constraint firstItem="QTB-4J-LXO" firstAttribute="leading" secondItem="sLC-RL-pZ6" secondAttribute="trailing" constant="19.239999999999998" id="71N-mx-zHR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QTB-4J-LXO" secondAttribute="trailing" symbolic="YES" id="BZe-RF-SwD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ffW-oe-vGi" secondAttribute="trailing" symbolic="YES" id="FBk-JL-FZi"/>
+                            <constraint firstItem="QTB-4J-LXO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="GGu-gS-oBn"/>
+                            <constraint firstItem="QTB-4J-LXO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="POz-s4-0el"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mVN-EV-WL7" secondAttribute="trailing" symbolic="YES" id="Xub-bs-JJM"/>
+                            <constraint firstItem="mVN-EV-WL7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="ads-CE-XOP"/>
+                            <constraint firstItem="sLC-RL-pZ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="e23-uz-qeN"/>
+                            <constraint firstItem="ffW-oe-vGi" firstAttribute="top" secondItem="mVN-EV-WL7" secondAttribute="bottom" constant="8" id="gB6-ZD-7TO"/>
+                            <constraint firstItem="QTB-4J-LXO" firstAttribute="leading" secondItem="sLC-RL-pZ6" secondAttribute="trailing" constant="19.239999999999998" id="rmn-xg-s9N"/>
+                            <constraint firstItem="sLC-RL-pZ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="tJA-GU-Lja"/>
+                            <constraint firstItem="mVN-EV-WL7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="wqb-Pz-MzO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="calories" destination="QTB-4J-LXO" id="qQ4-bk-zF7"/>
                         <outlet property="steps" destination="mVN-EV-WL7" id="aQY-zM-SSN"/>
                     </connections>
                 </viewController>
@@ -44,4 +72,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-gas-96" width="72" height="72"/>
+    </resources>
 </document>
