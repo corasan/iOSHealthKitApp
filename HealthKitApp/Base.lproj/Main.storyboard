@@ -43,18 +43,36 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4K-rY-ZkW">
+                                <rect key="frame" x="317" y="274" width="19" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwz-Kc-Fyi">
+                                <rect key="frame" x="296" y="321" width="67" height="24"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ffW-oe-vGi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="0IQ-0z-fPF"/>
                             <constraint firstItem="QTB-4J-LXO" firstAttribute="leading" secondItem="sLC-RL-pZ6" secondAttribute="trailing" constant="19.239999999999998" id="71N-mx-zHR"/>
+                            <constraint firstItem="Cwz-Kc-Fyi" firstAttribute="top" secondItem="T4K-rY-ZkW" secondAttribute="bottom" constant="8" id="95W-d7-2Wd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QTB-4J-LXO" secondAttribute="trailing" symbolic="YES" id="BZe-RF-SwD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ffW-oe-vGi" secondAttribute="trailing" symbolic="YES" id="FBk-JL-FZi"/>
                             <constraint firstItem="QTB-4J-LXO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="GGu-gS-oBn"/>
+                            <constraint firstItem="T4K-rY-ZkW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="NTN-k6-Gf7"/>
+                            <constraint firstItem="Cwz-Kc-Fyi" firstAttribute="top" secondItem="T4K-rY-ZkW" secondAttribute="bottom" constant="8" id="Nk2-W5-Yff"/>
                             <constraint firstItem="QTB-4J-LXO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="POz-s4-0el"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cwz-Kc-Fyi" secondAttribute="trailing" constant="51" id="R2d-pH-IGv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T4K-rY-ZkW" secondAttribute="trailing" constant="78" id="X6N-sy-GrK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mVN-EV-WL7" secondAttribute="trailing" symbolic="YES" id="Xub-bs-JJM"/>
                             <constraint firstItem="mVN-EV-WL7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="ads-CE-XOP"/>
                             <constraint firstItem="sLC-RL-pZ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="e23-uz-qeN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T4K-rY-ZkW" secondAttribute="trailing" constant="78" id="fBg-if-7Wf"/>
                             <constraint firstItem="ffW-oe-vGi" firstAttribute="top" secondItem="mVN-EV-WL7" secondAttribute="bottom" constant="8" id="gB6-ZD-7TO"/>
                             <constraint firstItem="QTB-4J-LXO" firstAttribute="leading" secondItem="sLC-RL-pZ6" secondAttribute="trailing" constant="19.239999999999998" id="rmn-xg-s9N"/>
                             <constraint firstItem="sLC-RL-pZ6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="tJA-GU-Lja"/>
@@ -64,6 +82,7 @@
                     </view>
                     <connections>
                         <outlet property="calories" destination="QTB-4J-LXO" id="qQ4-bk-zF7"/>
+                        <outlet property="exercise" destination="T4K-rY-ZkW" id="wFE-gs-Pva"/>
                         <outlet property="steps" destination="mVN-EV-WL7" id="aQY-zM-SSN"/>
                     </connections>
                 </viewController>

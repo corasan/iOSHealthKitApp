@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 	@IBOutlet weak var steps: UILabel!
 	@IBOutlet weak var calories: UILabel!
+	@IBOutlet weak var exercise: UILabel!
 	
 	var healthkitStore: HealthKitManager?
 	var stepCount: Int = 0
@@ -37,6 +38,14 @@ class ViewController: UIViewController {
 		healthkitStore?.getCalories(callback: { (calories) in
 			DispatchQueue.main.async {
 				self.calories.text = self.formatDouble(calories)
+			}
+		})
+	}
+	
+	func setExercise() {
+		healthkitStore?.getExercise(callback: { (exercise) in
+			DispatchQueue.main.async {
+				self.exercise.text = self.formatDouble(exercise)
 			}
 		})
 	}
